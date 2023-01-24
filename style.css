@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--color-S-blue: hsl(215, 51%, 70%);
+--color-Cyan: hsl(178, 100%, 50%);
+--color-Cyan-bg: hsl(178, 100%, 50%, .4);
+--color-V-dark-blue: hsl(217, 54%, 11%);
+--color-dark-blue: hsl(216, 50%, 16%);
+--color-L-blue: hsl(215, 32%, 27%);
+--color-White: hsl(0, 0%, 100%);
+--color-shadow: hsl(215, 100%, 5%);
+}
+
+body{
+    Font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--color-V-dark-blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 40px;
+    color: var(--color-White);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover{
+    color: var(--color-Cyan);
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    background: var(--color-dark-blue);
+    border-radius: 20px;
+    max-width: 300px;
+}
+
+.content{
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 15px 30px var(--color-shadow);
+}
+
+.image-content{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.view{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.image-content:hover > .view{
+    background-color: var(--color-Cyan-bg);
+    display: flex;
+}
+
+.image-view{
+    width: 20%;
+    height: 20%;
+}
+
+.image-view img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-nft{
+    display: inline-flex;
+}
+
+.title{
+    font-size: 22px;
+    color: var(--color-White);
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.title:hover{
+    color: var(--color-Cyan);
+}
+
+.paragraph{
+    color: var(--color-S-blue);
+    margin-bottom: 15px;
+    line-height: 23px;
+}
+
+.cont-public{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.public, .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-public img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+
+}
+
+.cont-price{
+    color: var(--color-Cyan);
+    margin-left: 5px;
+}
+
+.cont-day{
+    color: var(--color-S-blue);
+    margin-left: 5px;
+}
+
+.line{
+    background: var(--color-S-blue);
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+}
+
+.perfil-creater{
+    display: flex;
+    align-items: center;
+    padding:  5px 0;
+}
+
+.image-perfil{
+    width: 30px;
+    height: 30px;
+}
+
+.image-perfil img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-White);
+    border-radius: 50%;
+}
+
+.created-for{
+    margin-left: 20px;
+    color: var(--color-S-blue);
+}
+
+.name{
+    cursor: pointer;
+    color: var(--color-White);
+}
+
+.name:hover{
+    color: var(--color-Cyan);
+}
